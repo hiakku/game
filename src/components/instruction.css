@@ -1,0 +1,101 @@
+.instructionContainer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+@media screen and (min-width: 320px) {
+  .instruction_body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+}
+.instruction_bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(115, 103, 116, 0.6);
+}
+.instruction_inner {
+  max-width: 11rem;
+  width: 100%;
+  min-height: 15rem;
+  height: auto;
+  background: url("../constant/background.jpg");
+  padding: 2rem;
+  z-index: 10;
+  box-shadow: rgb(255 255 255 / 70%) 0px 1px 15px;
+  border-radius: 25px;
+}
+@media screen and (min-width: 475px) {
+  .instruction_inner {
+    max-width: 20rem;
+  }
+}
+.instruction_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 10rem;
+  overflow-y: auto;
+  position: relative;
+}
+@media screen and (max-width: 475px) {
+  .instruction_list {
+    padding-inline-start: 18px;
+  }
+}
+h2 {
+  font-family: "Segoe UI";
+  margin-top: 0;
+  font-size: 2rem;
+  color: white;
+}
+li {
+  font-family: "Segoe UI";
+  text-align: left;
+  color: white;
+  margin-bottom: 1rem;
+}
+.arrows {
+  position: absolute;
+  top: 3.2rem;
+  width: 3rem;
+  height: 3rem;
+}
+@media screen and (max-width: 475px) {
+  .arrows {
+    top: 7.5rem;
+  }
+}
+.goButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goIcon {
+  width: 5rem;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
